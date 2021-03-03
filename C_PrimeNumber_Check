@@ -1,0 +1,26 @@
+/* Author: Tejaswi Jasti 
+Date: 03 Mar 2021 */
+/* Program Desc: C program to find whether a given number is prime or not  */
+
+/* A number(n) is said to be prime if it is divisible by 1 and itself only. A prime number should have atleast two +ve factors
+1 is not prime as it has only one factor. So the least prime number is 2 */
+
+#include<stdio.h>    
+void main ()    
+{    
+ int i=0,n,flag=0;
+ printf("enter number greater than 1:"); //because 2 is the least prime number
+ scanf("%d",&n);
+ for(i=2;i<=(n-1);i++) //the loop starts from 2 to n because we are not considering 1 and n
+ {
+     if(n%i==0)
+     {
+         flag++;
+     }
+ }
+ if(flag==0)
+    printf("prime");
+ else
+    printf("not prime");
+ }
+ 
