@@ -1,4 +1,6 @@
-// C program to write the fibonacci series without recursion
+/* Author - Tejaswi Jasti
+Date: 03 Mar 2021 */
+// Program desc: C program to write the fibonacci series without recursion
 /* in fibonacci series the next number is the sum of previous two numbers.
  first two numbers in the series are 0 and 1 (predefined) */
  
