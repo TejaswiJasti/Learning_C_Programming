@@ -1,0 +1,21 @@
+// C program to write the fibonacci series without recursion
+/* in fibonacci series the next number is the sum of previous two numbers.
+ first two numbers in the series are 0 and 1 (predefined) */
+ 
+ #include<stdio.h>
+ int main()
+ {
+     int i,n1=0,n2=1,n3,n=0;
+     printf("enter the number of elements you want in the series:");
+     scanf("%d",&n);
+     printf("the fibonacci series is:");
+     printf("%d %d ",n1,n2);
+     for(i=1;i<n-1;i++)
+     {
+         n3=n1+n2;
+         printf("%d ",n3);
+         n1=n2;
+         n2=n3;
+     }
+return 0;
+ }
