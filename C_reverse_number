@@ -1,5 +1,5 @@
 /* Author: Tejaswi Jasti 
-Date: 03 Mar 2021 */
+Date: 04 Mar 2021 */
 //Program Desc: C program to find the reverse of a given number
 
 #include <stdio.h>
