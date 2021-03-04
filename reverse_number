@@ -1,0 +1,19 @@
+/* Author: Tejaswi Jasti 
+Date: 03 Mar 2021 */
+//Program Desc: C program to find the reverse of a given number
+
+#include <stdio.h>
+int main()
+{
+   int n=0,rev=0,rem=0,n2=0;
+   printf("enter a number: ");
+   scanf("%d",&n);
+   n2=n;
+   while(n>0)
+   {
+       rem=n%10;
+       rev=rev*10+rem;
+       n=n/10;
+   }
+   printf("the reverse of the given number is: %d",rev);
+}
