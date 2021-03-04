@@ -1,0 +1,27 @@
+/* Author: Tejaswi Jasti 
+Date: 04 Mar 2021 */
+//Program Desc: C program to find whether the given number is a palindrome or not.
+
+#include <stdio.h>
+int main()
+{
+   int n=0,rev=0,rem=0,n2=0;
+   printf("enter a positive number: "); //negative numbers are not palindromic
+   scanf("%d",&n);
+   n2=n;
+   while(n>0)
+   {
+       rem=n%10;
+       rev=rev*10+rem;
+       n=n/10;
+   }
+   printf("the reverse of the given number is: %d",rev);
+   if(rev==n2)
+   {
+       printf("the given number is a palindrome");
+   }
+   else
+   {
+       printf("the given number is not a palindrome");
+   }
+}
